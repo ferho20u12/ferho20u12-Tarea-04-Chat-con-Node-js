@@ -1,12 +1,8 @@
-//const { response } = require("express");
-
-//const message document.querySelector('#message')
-const url = 'http://localhost:3000/'
-//const url ='myapp/app.js'
+const port = document.URL;
 
 document.getElementById("bttnR").onclick = function () 
 {
-    fetch(url+"get",
+    fetch(port+"get",
     {
     })
     .then(response => response.text())
@@ -16,7 +12,7 @@ document.getElementById("bttnR").onclick = function ()
 };
 document.getElementById("bttn").onclick = function () 
 {
-    fetch(url, {
+    fetch(port, {
         method: 'POST', // or 'PUT'
         body: JSON.stringify({username: document.querySelector('#inputMessage').value}), // data can be `string` or {object}!
         headers:{
