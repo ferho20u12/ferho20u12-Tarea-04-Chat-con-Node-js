@@ -6,3 +6,11 @@ body {
 a {
   color: #00B7FF;
 }
+#left{
+  /*align-content: center;*/
+  text-align: right;
+}
+#right{
+  /*align-content: center;*/
+  text-align: right;
+}
